@@ -106,7 +106,7 @@ public class MoreTaskActivity extends Activity implements OnClickListener,
 			getDomobList();
 		} else if (id == R.id.TextView_2) {
 			Dianle.showOffers(this);
-		} else if (id == R.id.TextView_3) {
+		} else if (id == R.id.TextView_3 ) {
 			AdWall.showAppOffers(null);
 		} else if (id == R.id.TextView_4) {
 			OffersManager.getInstance(this).showOffersWall();//ÓÐÃ×

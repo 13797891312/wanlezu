@@ -38,7 +38,7 @@ public class AdListActivity extends Activity implements OnItemClickListener {
 	private Collect_gridview_Adapter adapter;
 	private ProgressDialog dialog;
 	private String type;
-	private int currentPositon = 0;
+	private int currentPositon = 1;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
