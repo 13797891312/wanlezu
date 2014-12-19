@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <include
+        android:id="@+id/tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/includ_tab_back" />
+    <RelativeLayout android:layout_width="match_parent"
+        android:id="@+id/rel"
+        android:layout_height="40dp"
+        android:background="#f00"
+        android:layout_below="@+id/tab">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:layout_marginLeft="20dp"
+            android:text="共邀请好友2位" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:text="共赚取好友奖励100玩币" />
+        
+    </RelativeLayout>
+   <com.hzkjkf.view.MyListView
+        android:listSelector="@android:color/transparent"
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/shape_my_gridview_2px"
+        android:layout_below="@+id/rel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="none"/>
+</RelativeLayout>

@@ -1,0 +1,315 @@
+# view res/layout/activity_advert.xml #generated:18
+# view res/layout/activity_rank.xml #generated:61
+# view res/layout/fragment_home.xml #generated:12
+# view res/layout/fragment_shop.xml #generated:14
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:399
+-keep class cn.dm.android.DMOfferActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:404
+-keep class cn.dm.android.DMService { <init>(...); }
+
+# view AndroidManifest.xml #generated:272
+-keep class cn.domob.download.OActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:444
+-keep class com.advertwall.sdk.activity.HelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:450
+-keep class com.advertwall.sdk.activity.PackageReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:439
+-keep class com.advertwall.sdk.activity.TaskDetailsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:434
+-keep class com.advertwall.sdk.activity.TaskWallActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.baidu.location.f { <init>(...); }
+
+# view res/layout/activity_map.xml #generated:10
+-keep class com.baidu.mapapi.map.MapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:421
+-keep class com.bb.dd.BDService { <init>(...); }
+
+# view AndroidManifest.xml #generated:417
+-keep class com.bb.dd.Browser { <init>(...); }
+
+# view AndroidManifest.xml #generated:391
+-keep class com.dlnetwork.DianleGoogleActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:396
+-keep class com.dlnetwork.DianleGoogleService { <init>(...); }
+
+# view AndroidManifest.xml #generated:200
+-keep class com.hzkjkf.activity.AdListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:168
+-keep class com.hzkjkf.activity.AdvertActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:164
+-keep class com.hzkjkf.activity.CollectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:236
+-keep class com.hzkjkf.activity.DownLoadTaskAcitivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:188
+-keep class com.hzkjkf.activity.DrawFirmActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:160
+-keep class com.hzkjkf.activity.DrawRecordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:220
+-keep class com.hzkjkf.activity.DrawRecordActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:166
+-keep class com.hzkjkf.activity.DrawWayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:158
+-keep class com.hzkjkf.activity.EarnRecordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:218
+-keep class com.hzkjkf.activity.EarnRecordActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:202
+-keep class com.hzkjkf.activity.Game1Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:204
+-keep class com.hzkjkf.activity.Game2Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:206
+-keep class com.hzkjkf.activity.Game2RecordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:192
+-keep class com.hzkjkf.activity.GameAcitivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:150
+-keep class com.hzkjkf.activity.HomeViewPageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:129
+-keep class com.hzkjkf.activity.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:107
+-keep class com.hzkjkf.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:180
+-keep class com.hzkjkf.activity.MoreTaskActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:208
+-keep class com.hzkjkf.activity.NewcomerRedAcitivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:186
+-keep class com.hzkjkf.activity.NewsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:198
+-keep class com.hzkjkf.activity.RedAcitivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:222
+-keep class com.hzkjkf.activity.ReferalRecordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:142
+-keep class com.hzkjkf.activity.Register1Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:154
+-keep class com.hzkjkf.activity.Register2Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:194
+-keep class com.hzkjkf.activity.ShareAcitivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:214
+-keep class com.hzkjkf.activity.ShopInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:196
+-keep class com.hzkjkf.activity.SignAcitivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:125
+-keep class com.hzkjkf.activity.Start1Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class com.hzkjkf.activity.Start2Acitivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:162
+-keep class com.hzkjkf.activity.StartEarnActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:238
+-keep class com.hzkjkf.activity.TaskInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:190
+-keep class com.hzkjkf.activity.TermsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:216
+-keep class com.hzkjkf.activity.UserInfoAcitivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:170
+-keep class com.hzkjkf.activity.YouHuiActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:224
+-keep class com.hzkjkf.activity.YouHuiRecordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:212
+-keep class com.hzkjkf.activity.baidu.BaiduMapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:226
+-keep class com.hzkjkf.adtask.MyTaskActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:230
+-keep class com.hzkjkf.adtask.Question1Acitvity { <init>(...); }
+
+# view AndroidManifest.xml #generated:232
+-keep class com.hzkjkf.adtask.QuestionGMOAcitvity { <init>(...); }
+
+# view AndroidManifest.xml #generated:234
+-keep class com.hzkjkf.adtask.QuestionInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:228
+-keep class com.hzkjkf.adtask.QuestionTaskActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:174
+-keep class com.hzkjkf.more.About { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class com.hzkjkf.more.Help { <init>(...); }
+
+# view AndroidManifest.xml #generated:146
+-keep class com.hzkjkf.more.Info { <init>(...); }
+
+# view AndroidManifest.xml #generated:182
+-keep class com.hzkjkf.more.Music { <init>(...); }
+
+# view AndroidManifest.xml #generated:172
+-keep class com.hzkjkf.more.PassWord { <init>(...); }
+
+# view AndroidManifest.xml #generated:210
+-keep class com.hzkjkf.more.Rank { <init>(...); }
+
+# view AndroidManifest.xml #generated:176
+-keep class com.hzkjkf.more.Trends { <init>(...); }
+
+# view AndroidManifest.xml #generated:178
+-keep class com.hzkjkf.more.TrendsInfo { <init>(...); }
+
+# view AndroidManifest.xml #generated:184
+-keep class com.hzkjkf.more.Version { <init>(...); }
+
+# view AndroidManifest.xml #generated:241
+-keep class com.hzkjkf.service_receiver.AppReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:249
+-keep class com.hzkjkf.service_receiver.AppService { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.hzkjkf.util.MyApp { <init>(...); }
+
+# view res/layout/activity_game1.xml #generated:18
+-keep class com.hzkjkf.view.GameView { <init>(...); }
+
+# view res/layout/fragment_my.xml #generated:7
+-keep class com.hzkjkf.view.MyFreshfHead { <init>(...); }
+
+# view res/layout/activity_drawrecord2.xml #generated:12
+# view res/layout/activity_drawrecord2.xml #generated:24
+# view res/layout/activity_earnrecord2.xml #generated:12
+# view res/layout/activity_refrecord.xml #generated:41
+# view res/layout/fragment_shop.xml #generated:33
+-keep class com.hzkjkf.view.MyListView { <init>(...); }
+
+# view res/layout/fragment_my.xml #generated:2
+-keep class com.hzkjkf.view.MyRefreshLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:286
+-keep class com.hzkjkf.wanzhuan.wxapi.WXEntryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:423
+-keep class com.hzkjkf.wanzhuan2.wxapi.WXEntryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:429
+-keep class com.renn.rennsdk.oauth.OAuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:255
+-keep class com.tencent.connect.common.AssistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:259
+-keep class com.tencent.tauth.AuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:409
+-keep class com.umeng.fb.ContactActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:406
+-keep class com.umeng.fb.ConversationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:333
+-keep class com.umeng.message.NotificationProxyBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:337
+-keep class com.umeng.message.RegistrationReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:352
+-keep class com.umeng.message.UmengBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:386
+-keep class com.umeng.message.UmengIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:364
+-keep class com.umeng.message.UmengService { <init>(...); }
+
+# view AndroidManifest.xml #generated:277
+-keep class com.umeng.socialize.view.ShareActivity { <init>(...); }
+
+# view res/layout/umeng_socialize_post_share.xml #generated:2
+# view sw550dp-large-v13\res/layout-sw550dp-large-v13/umeng_socialize_post_share.xml #generated:2
+-keep class com.umeng.socialize.view.wigets.KeyboardListenRelativeLayout { <init>(...); }
+
+# view res/layout/umeng_socialize_at_view.xml #generated:21
+-keep class com.umeng.socialize.view.wigets.SearchBox { <init>(...); }
+
+# view res/layout/umeng_socialize_at_view.xml #generated:38
+-keep class com.umeng.socialize.view.wigets.SectionListView { <init>(...); }
+
+# view res/layout/umeng_socialize_at_view.xml #generated:47
+-keep class com.umeng.socialize.view.wigets.SlideBar { <init>(...); }
+
+# view AndroidManifest.xml #generated:327
+-keep class com.umeng.update.UpdateDialogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:322
+-keep class com.umeng.update.net.DownloadingService { <init>(...); }
+
+# view AndroidManifest.xml #generated:413
+-keep class net.miidiwall.SDK.MyWallActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:294
+-keep class net.youmi.android.AdBrowser { <init>(...); }
+
+# view AndroidManifest.xml #generated:309
+-keep class net.youmi.android.AdReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:300
+-keep class net.youmi.android.AdService { <init>(...); }
+
+# view AndroidManifest.xml #generated:304
+-keep class net.youmi.android.ExpService { <init>(...); }
+
+# view AndroidManifest.xml #generated:316
+-keep class net.youmi.android.offers.OffersReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:378
+-keep class org.android.agoo.service.ElectionService { <init>(...); }
+
+# onClick res/layout/activity_main.xml #generated:47
+# onClick res/layout/includ_tab_back.xml #generated:23
+-keepclassmembers class * { *** backClick(...); }
+
+# onClick res/layout/includ_tab_startearn_pop.xml #generated:23
+-keepclassmembers class * { *** closeClick(...); }
+
+# onClick res/layout/activity_shopinfo.xml #generated:199
+# onClick res/layout/activity_shopinfo.xml #generated:216
+# onClick res/layout/activity_shopinfo.xml #generated:235
+# onClick res/layout/activity_shopinfo.xml #generated:254
+-keepclassmembers class * { *** infoClick(...); }
+
+# onClick res/layout/activity_main.xml #generated:24
+-keepclassmembers class * { *** mapClick(...); }
+

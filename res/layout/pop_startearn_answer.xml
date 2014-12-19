@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/pop_result_bg"
+        android:paddingBottom="10dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_marginTop="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ddlicon_03" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="答对了，恭喜您成功赚钱+5分钱！" />
+
+        <Button
+            android:id="@+id/button_next" 
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pop_answer_btn"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:text="返回查看下一张" />
+
+        <ViewStub
+            android:id="@+id/viewstub_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/includ_loading_result" />
+    </RelativeLayout>
+
+</RelativeLayout>

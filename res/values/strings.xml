@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">玩乐族</string>
+    <string name="exit">是否退出玩乐族？</string>
+    <string name="version">当前：v1.0</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="about_title1">中国首款看图答题就能赚钱的APP</string>
+    <string name="about_title2">我们专注，我们思索，我们创新</string>
+    <string name="about_text1">玩乐族app是一款手机赚钱软件，在智能手机和手机互联网飞速发展的时代，广告正在渗透向手机的每一个角落，玩乐族app正是在此背景下诞生。\n\n为了方便广告商更好更快速的传播广告信息，我们将广告商的广告费留给了用户，用户只需要通过玩乐族app浏览广告信息就能轻松赚钱，操作简单方便，每天只需要耗费几分钟时间，就能轻松赚取最低0.5元的收益。\n\n对于广告商来说，花费了相对低的广告费用获得了较好的广告宣传效果，对于用户来说，既获取了时下最新最热的产品信息，又赚取了收益，这是一个双赢的局面\n\n我们希望借此打造一个高速的信息化网赚服务平台，平台的发展离不开广大用户的支持，我们将不断完善服务，拓展用户的收益渠道，让更多的用户的加入我们，希望广大用户多多为平台作宣传贡献，推广就会有相应的推广奖励！\n\n官方网站:http://www.wanzhuan6.com \n官方QQ群: 376238715</string>
+    <string name="share_text">分享有礼啦！\n\t\t通过专门为你量身定制的二维码、邀请链接或本页下方的分享渠道即可完成小伙伴邀请！\n\t\t分享奖励1：好友完成注册，您马上就能可获得20玩币奖励!\n\t\t分享奖励2：好友首次完成下载应用类的任务，您马上就能再获得20玩币奖励！\n\t\t分享奖励3：任何时间段好友完成下载应用类的任务，您马上就能获得20%玩币奖励。</string>
+</resources>

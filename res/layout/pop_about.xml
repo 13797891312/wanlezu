@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/shape_bg"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_pop_tab"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="#f00"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textView_title"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/textView_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="15sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/scrollView1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pop_btn_dismiss"
+        android:text="我知道了" />
+
+</RelativeLayout>

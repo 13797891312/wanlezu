@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/includ_tab_back" />
+    <ListView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"></ListView>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/red"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:text="*1.请根据实际情况进行答题，作弊答题不给予奖励\n2.本区的问卷完成后需要进行人工审核，审核周期约为1个工作日，如遇周末、节假日则顺延，审核成功后，玩币会打到您的账户中,在您的赚钱记录中会有记录\n3.回答问卷的过程中被筛选后不能获得玩币。"
+        android:id="@+id/textView_info"/>
+
+</LinearLayout>

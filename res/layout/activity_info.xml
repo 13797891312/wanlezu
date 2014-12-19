@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/includ_tab_back" />
+
+    <RelativeLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/qb_tenpay_border" >
+
+        <TextView
+            android:id="@+id/old_textView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:text="手机号:" />
+
+        <EditText
+            android:id="@+id/old_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/old_textView"
+            android:background="#00000000"
+            android:editable="false"
+            android:gravity="center_vertical"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:text="13797891312" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sex_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/phone_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/qb_tenpay_border" >
+
+        <TextView
+            android:id="@+id/sex_textview"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:text="性别：" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/sex_textview"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/radiobtn_style"
+                android:gravity="center_vertical"
+                android:checked="true"
+                android:text="男性" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/radiobtn_style"
+                android:gravity="center_vertical"
+                android:text="女性" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/birthday_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sex_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/qb_tenpay_border" >
+
+        <TextView
+            android:id="@+id/birthday_textview"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:text="出生年月:" />
+
+        <TextView
+            android:id="@+id/birthday_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/birthday_textview"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:hint="格式为yyyy-mm-dd"
+            android:singleLine="true" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/marriage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/birthday_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/qb_tenpay_border" >
+
+        <TextView
+            android:id="@+id/marriage_textview"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:text="婚姻：" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/marriage_textview"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/no_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/radiobtn_style"
+                android:gravity="center_vertical"
+                android:checked="true"
+                android:text="未婚" />
+
+            <RadioButton
+                android:id="@+id/yes_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:button="@null"
+                android:checked="false"
+                android:drawableLeft="@drawable/radiobtn_style"
+                android:gravity="center_vertical"
+                android:text="已婚" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/job_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marriage_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/qb_tenpay_border" >
+
+        <TextView
+            android:id="@+id/job_textview"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:text="职业：" />
+
+        <TextView
+            android:id="@+id/job_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="110dp"
+            android:hint="请选择您的职业"
+            android:gravity="center_vertical"
+            android:background="#00000000"
+            android:maxLines="1" >
+        </TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/edu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/job_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/qb_tenpay_border" >
+
+        <TextView
+            android:id="@+id/edu_textview"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:text="学历：" />
+
+        <TextView
+            android:id="@+id/edu_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:hint="请选择您的学历"
+            android:paddingLeft="110dp"
+            android:gravity="center_vertical"
+            android:maxLines="1" >
+        </TextView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/sex_layout"
+        android:layout_alignRight="@+id/sex_layout"
+        android:layout_below="@+id/edu_layout"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:background="@drawable/btn_login"
+        android:text="确认修改" />
+
+</RelativeLayout>

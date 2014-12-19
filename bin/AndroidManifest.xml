@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hzkjkf.wanzhuan"
+    android:versionCode="2"
+    android:versionName="2.06" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息,wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网 -->
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 开机广播权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="com.hzkjkf.util.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/u4_normal"
+        android:label="@string/app_name"
+        android:theme="@style/ThemeActivity" >
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53d85466fd98c58301010252" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="OMLaMGbhpjxrGenhtw9ibGTH" />
+        <!-- 有米 -->
+        <meta-data
+            android:name="YOUMI_CHANNEL"
+            android:value="10020" >
+        </meta-data>
+        <!-- 友盟推送 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53d85466fd98c58301010252" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="1af0af8b36a9740a02646fd7483dc0ec" >
+        </meta-data>
+        <!-- 友盟推送 -->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <activity
+            android:name="com.hzkjkf.activity.Start2Acitivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hzkjkf.more.Help"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hzkjkf.activity.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sdksample" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hzkjkf.activity.Start1Activity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.hzkjkf.activity.LoginActivity"
+            android:launchMode="singleTask" >
+
+            <!-- 浏览器跳转到APP的过滤器 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+               <!--  <data android:host="my.com" /> -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="wanlezu" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hzkjkf.activity.Register1Activity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.hzkjkf.more.Info"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.hzkjkf.activity.HomeViewPageActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.hzkjkf.activity.Register2Activity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.EarnRecordActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.DrawRecordActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.StartEarnActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.CollectActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.DrawWayActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.AdvertActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.YouHuiActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.more.PassWord" >
+        </activity>
+        <activity android:name="com.hzkjkf.more.About" >
+        </activity>
+        <activity android:name="com.hzkjkf.more.Trends" >
+        </activity>
+        <activity android:name="com.hzkjkf.more.TrendsInfo" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.MoreTaskActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.more.Music" >
+        </activity>
+        <activity android:name="com.hzkjkf.more.Version" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.NewsActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.DrawFirmActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.TermsActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.GameAcitivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.ShareAcitivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.SignAcitivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.RedAcitivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.AdListActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.Game1Activity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.Game2Activity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.Game2RecordActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.NewcomerRedAcitivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.more.Rank" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.baidu.BaiduMapActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.ShopInfoActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.UserInfoAcitivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.EarnRecordActivity2" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.DrawRecordActivity2" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.ReferalRecordActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.YouHuiRecordActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.adtask.MyTaskActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.adtask.QuestionTaskActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.adtask.Question1Acitvity" >
+        </activity>
+        <activity android:name="com.hzkjkf.adtask.QuestionGMOAcitvity" >
+        </activity>
+        <activity android:name="com.hzkjkf.adtask.QuestionInfoActivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.DownLoadTaskAcitivity" >
+        </activity>
+        <activity android:name="com.hzkjkf.activity.TaskInfoActivity" >
+        </activity>
+        <!-- 监听应用程序安装成功 -->
+        <receiver android:name="com.hzkjkf.service_receiver.AppReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.hzkjkf.service_receiver.AppService" >
+            <intent-filter>
+                <action android:name="android.sevice.downservici" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101104412" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.domob.download.OActivity" >
+        </activity>
+
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.hzkjkf.wanzhuan.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 有米广告 -->
+        <activity
+            android:name="net.youmi.android.AdBrowser"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="net.youmi.android.AdService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="net.youmi.android.ExpService"
+            android:exported="false" >
+        </service>
+
+        <receiver android:name="net.youmi.android.AdReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="net.youmi.android.offers.OffersReceiver"
+            android:exported="false" >
+        </receiver>
+
+        <!-- 友盟自动更新 -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!-- 友盟推送 -->
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false" >
+        </receiver>
+        <receiver android:name="com.umeng.message.RegistrationReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+
+            <!-- 【可选】根据需要添加 -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.UmengBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.hzkjkf.wanzhuan.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RE_ELECTION_V2" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.umeng.message.UmengService"
+            android:exported="true"
+            android:process=":umengService_v1" >
+            <intent-filter>
+                <action android:name="com.hzkjkf.wanzhuan.intent.action.START" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.hzkjkf.wanzhuan.intent.action.COCKROACH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="org.android.agoo.service.ElectionService"
+            android:exported="true"
+            android:process=":umengService_v1" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_V2" />
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.message.UmengIntentService" />
+        <!-- 友盟推送 -->
+
+
+        <!-- 点乐积分墙 -->
+        <activity
+            android:name="com.dlnetwork.DianleGoogleActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service android:name="com.dlnetwork.DianleGoogleService" />
+
+        <!-- 多盟积分墙 -->
+        <activity
+            android:name="cn.dm.android.DMOfferActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <service android:name="cn.dm.android.DMService" />
+        <!-- 友盟反馈 -->
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.umeng.fb.ContactActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 米笛积分墙 -->
+        <activity
+            android:name="net.miidiwall.SDK.MyWallActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <!-- 贝多积分墙 -->
+        <activity
+            android:name="com.bb.dd.Browser"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        <service android:name="com.bb.dd.BDService" />
+
+        <activity
+            android:name="com.hzkjkf.wanzhuan2.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.renn.rennsdk.oauth.OAuthActivity"
+            android:configChanges="orientation|navigation|keyboardHidden" />
+
+        <!-- OffWow SDK -->
+        <activity
+            android:name="com.advertwall.sdk.activity.TaskWallActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.advertwall.sdk.activity.TaskDetailsActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.advertwall.sdk.activity.HelpActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver android:name="com.advertwall.sdk.activity.PackageReceiver" >
+            <intent-filter android:priority="68547" >
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+                <!-- 注意！！ 这句必须要加，否则接收不到BroadCast -->
+            </intent-filter>
+        </receiver>
+        <!-- OffWow SDK结束 -->
+    </application>
+
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+
+</manifest>

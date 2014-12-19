@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab" >
+
+        <RelativeLayout
+            android:background="#eeeeee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <RelativeLayout
+                android:id="@+id/rel_youmi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_my_gridview" >
+
+                <TextView
+                    android:id="@+id/TextView_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="60dp"
+                    android:text="应用市场一(推荐)"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/iv_1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/down" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_duomeng"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/rel_youmi"
+                android:layout_marginTop="-1px"
+                android:background="@drawable/shape_my_gridview" >
+
+                <TextView
+                    android:id="@+id/TextView_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="60dp"
+                    android:text="应用市场二"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/iv_2"
+                    android:background="@drawable/down" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_dianle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/rel_yinggao"
+                android:layout_marginTop="-1px"
+                android:background="@drawable/shape_my_gridview" >
+
+                <TextView
+                    android:id="@+id/TextView_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="60dp"
+                    android:text="应用市场四"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/iv_4"
+                    android:background="@drawable/down" />
+            </RelativeLayout>
+           
+
+            <RelativeLayout
+                android:id="@+id/rel_yinggao"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/rel_duomeng"
+                android:layout_marginTop="-1px"
+                android:background="@drawable/shape_my_gridview" >
+
+                <TextView
+                    android:id="@+id/TextView_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="60dp"
+                    android:text="应用市场三"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/iv_3"
+                    android:background="@drawable/down" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_dianle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="*友情提示：任务完成后第二天签到会有额外收入，请不要立即卸载哦！"
+                android:textColor="#f00" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="*任务完成后由于网络原因，余额变动可能会有一定延时，请您放心使用！" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="*禁止任何形式、工具的作弊行为，一经发现将禁止提现，情节严重的直接冻结账号！" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

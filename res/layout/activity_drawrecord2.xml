@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <include
+        android:id="@+id/tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/includ_tab_back" />
+    <com.hzkjkf.view.MyListView
+        android:listSelector="@android:color/transparent"
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/shape_my_gridview_2px"
+        android:layout_below="@+id/rel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="none"/>
+    <com.hzkjkf.view.MyListView
+        android:listSelector="@android:color/transparent"
+        android:id="@+id/listview1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/shape_my_gridview_2px"
+        android:layout_below="@+id/rel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+         android:visibility="gone"
+        android:scrollbars="none"/>
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:background="@color/red"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tab">
+
+        <TextView
+            android:id="@+id/putong_tv"
+            android:layout_width="100dp"
+            android:textColor="#f00"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:clickable="true"
+            android:text="普通商品" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100dp"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/putong_tv"
+            android:gravity="center"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:background="#E22732"
+            android:layout_height="match_parent"
+            android:text="超级拍" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/home_tab_shape" >
+
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="#f00"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/city_layout"
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:clickable="true"
+            android:onClick="mapClick"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent" >
+			<ImageView 
+			    android:layout_width="25dp"
+			    android:id="@+id/city_imageView"
+			    android:layout_centerVertical="true"
+			    android:layout_height="25dp"
+			    android:background="@drawable/indexicon"/>
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			     android:paddingTop="5dp"
+			    android:text="定位中"
+			    android:textColor="#A6A6A6"
+			    android:layout_centerVertical="true"
+			    android:layout_toRightOf="@+id/city_imageView"
+			    android:id="@+id/city_textView"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/back_layout"
+            android:layout_width="wrap_content"
+            android:onClick="backClick"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent" >
+			<ImageView 
+			    android:layout_width="15dp"
+			    android:id="@+id/back_imageView"
+			    android:layout_centerVertical="true"
+			    android:layout_height="15dp" 
+			    android:background="@drawable/robock"/>
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="返回"
+			    android:layout_marginLeft="5dp"
+			    android:textColor="#A6A6A6"
+			    android:textSize="15sp"
+			    android:layout_centerVertical="true"
+			    android:layout_toRightOf="@+id/back_imageView"
+			    android:id="@+id/city_textView"/>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/news_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/xiaoxi_bg" />
+
+        <TextView
+            android:id="@+id/textView_news"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/news_num"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragmentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tab_layout"
+        android:background="#EEEEEE"
+        android:layout_below="@+id/title_layout" >
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tab_layout"
+        android:layout_below="@+id/title_layout"
+        android:layout="@layout/includ_loading"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:layout_alignParentBottom="true" >
+
+        <GridView
+            android:id="@+id/tab_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:numColumns="4" >
+        </GridView>
+    </LinearLayout>
+
+</RelativeLayout>

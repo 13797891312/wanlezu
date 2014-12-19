@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rel"
+    android:layout_height="match_parent" >
+    <include layout="@layout/includ_tab_back"
+        android:id="@+id/tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ViewStub android:layout="@layout/includ_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab"
+        android:id="@+id/viewstub_loading"/>
+    <ListView
+        android:id="@+id/news_listview"
+        android:layout_below="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</RelativeLayout>

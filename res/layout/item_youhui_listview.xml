@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:background="@drawable/yhq_03" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/quan" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageView1"
+                android:layout_centerVertical="true"
+                android:text="朝天门火锅八折优惠券"
+                android:textColor="#fff"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="2dp"
+        android:text="有效期：2014-11-01 08：00"
+        android:textColor="@color/gray"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:text="TextView"
+        android:textSize="12sp" />
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="3dp"
+        android:id="@+id/layOut_info">
+        <TextView android:layout_width="wrap_content"
+            android:id="@+id/info_name"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="优惠券详情："/>
+        <TextView android:layout_width="wrap_content"
+            android:id="@+id/info_value"
+            android:layout_below="@+id/info_name"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+           />
+    </RelativeLayout>
+
+</RelativeLayout>

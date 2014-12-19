@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/includ_tab_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_below="@+id/tab"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" >
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp"
+                 android:text="@string/share_text"
+                android:textColor="#000"/>
+
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_my_gridview" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView_share"
+                    android:layout_marginLeft="20dp"
+                    android:text="您的专属二维码  : "
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+                <ImageView android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/textView2"
+                    android:id="@+id/imageView_ewm"/>
+
+                <TextView
+                    android:id="@+id/textView_downAdress_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:layout_below="@+id/imageView_ewm"
+                    android:layout_marginTop="3dp"
+                    android:text="推广方式1：专属安装包下载链接  : "
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:layout_below="@+id/textView_downAdress"
+                    android:layout_marginTop="3dp"
+                    android:text="推广方式2：专属网页注册链接  : "
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView_downAdress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_below="@+id/textView_downAdress_title"
+                    android:layout_marginTop="3dp"
+                    android:text="http://www.wanzhuan6.com/appService/loadAPK/RYB9AH"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginTop="3dp"
+                    android:text="http://www.wanzhuan6.com/appService/loadAPK/RYB9AH"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/textView4"
+                    android:layout_toRightOf="@+id/textView3"
+                    android:background="#ff0"
+                    android:text="点击复制"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/textView_downAdress"
+                    android:layout_toRightOf="@+id/textView_downAdress_title"
+                    android:background="#ff0"
+                    android:text="点击复制"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@+id/rel" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="每日分享任务" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/share_button"
+                    android:clickable="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="一键分享"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/listview_share"
+                android:layout_width="match_parent"
+                android:layout_height="305dp"
+                android:dividerHeight="1px" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

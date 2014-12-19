@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="兑换内容" />
+        <View android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="#DBDBDB"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+             android:textSize="12sp"
+             android:layout_weight="0.25"
+              android:gravity="center"
+            android:text="消费玩币" />
+        <View android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="#DBDBDB"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+             android:textSize="12sp"
+             android:layout_weight="0.3"
+              android:gravity="center"
+            android:text="兑换时间" />
+        <View android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="#DBDBDB"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+             android:textSize="12sp"
+              android:gravity="center"
+             android:layout_weight="0.2"
+            android:text="兑换状态" />
+
+    </LinearLayout>
+
+</RelativeLayout>

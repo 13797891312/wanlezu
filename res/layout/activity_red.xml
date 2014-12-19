@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <include layout="@layout/includ_tab_back"
+        android:id="@+id/tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/image_baner"
+        android:layout_width="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_height="160dp"
+        android:layout_below="@+id/tab"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/image_baner"
+        android:layout_marginTop="15dp" >
+
+        <ListView
+        android:id="@+id/listview_red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1px">
+    </ListView>
+    <TextView android:layout_width="wrap_content"
+        android:id="@+id/textView_info"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:layout_below="@+id/listview_red"
+        android:text="*分享说明：进入首页乐分享，完成分享任务后即为一次有效分享"/>
+    </RelativeLayout>
+</RelativeLayout>

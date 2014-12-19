@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <include layout="@layout/includ_tab_back"
+        android:id="@+id/tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/image_baner"
+        android:layout_width="wrap_content"
+        android:background="#E22732"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/tab"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/image_baner"
+        android:layout_marginTop="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/layout_dzp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_my_gridview"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dzp" />
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/jiantou" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView1"
+                android:text="幸运大转盘" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_csz"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/layout_dzp"
+            android:layout_marginTop="-1px"
+            android:background="@drawable/shape_my_gridview"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/imageView_csz"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/csz" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/jiantou" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView_csz"
+                android:text="猜数字" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_xpg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/layout_csz"
+            android:layout_marginTop="-1px"
+            android:visibility="gone"
+            android:background="@drawable/shape_my_gridview"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/imageView_xpg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/xpg" />
+
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/jiantou" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView_xpg"
+                android:text="我是你的小苹果" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

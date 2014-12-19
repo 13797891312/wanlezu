@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iamgeview_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+    <ViewStub android:layout="@layout/includ_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@id/viewstub_loading"/>
+
+    <Button
+        android:id="@+id/button_info"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:alpha="50"
+        android:background="@drawable/shangjia" />
+
+    <Button
+        android:id="@+id/button_collect"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/button_info"
+        android:layout_alignBottom="@+id/button_info"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/button_info"
+        android:alpha="50"
+        android:background="@drawable/shoucang" />
+    <Button
+        android:id="@+id/button_youhui"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/button_info"
+        android:layout_alignBottom="@+id/button_info"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/button_collect"
+        android:alpha="50"
+        android:background="@drawable/youhui" />
+    <Button
+        android:id="@+id/button_share"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/button_info"
+        android:layout_alignBottom="@+id/button_info"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/button_youhui"
+        android:alpha="50"
+        android:background="@drawable/share" />
+
+    <RelativeLayout
+        android:id="@+id/rel_start"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dati_bg"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/textview_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:text="开始答题，进入下张"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageview_alpha"
+        android:visibility="gone"
+        android:background="#99000000"/>
+
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_youhui"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="#f00"
+        android:text="10秒后可答题" />
+
+</RelativeLayout>

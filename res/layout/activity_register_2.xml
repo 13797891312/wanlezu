@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/includ_tab_back" />
+
+    <RelativeLayout
+        android:id="@+id/rel_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/qb_tenpay_border" >
+
+        <ImageView
+            android:id="@+id/imageview_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/name" />
+
+        <TextView
+            android:id="@+id/textview_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageview_phone"
+            android:gravity="center_vertical"
+            android:text="手机号" />
+
+        <TextView
+            android:id="@+id/edittext_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textview_phone"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:maxLength="11"
+            android:maxLines="1" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_password1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/qb_tenpay_border" >
+
+        <ImageView
+            android:id="@+id/imageview_password1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/password" />
+
+        <TextView
+            android:id="@+id/textview_password1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageview_password1"
+            android:text="设置密码(6-16位)" />
+
+        <EditText
+            android:id="@+id/edittext_password1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textview_password1"
+            android:background="#00000000"
+            android:inputType="textPassword"
+            android:maxLines="1" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_password1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/qb_tenpay_border" >
+
+        <ImageView
+            android:id="@+id/imageview_password2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/password" />
+
+        <TextView
+            android:id="@+id/textview_password2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageview_password2"
+            android:text="确认密码(6-16位)" />
+
+        <EditText
+            android:id="@+id/edittext_password2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textview_password2"
+            android:background="#00000000"
+            android:inputType="textPassword"
+            android:maxLines="1" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/rel_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_password2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/qb_tenpay_border" >
+
+        <ImageView
+            android:id="@+id/imageview_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/textview_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageview_code"
+            android:text="邀请码(可不填)" />
+
+        <EditText
+            android:id="@+id/edittext_code"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textview_code"
+            android:background="#00000000"
+            android:maxLines="1" >
+        </EditText>
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/checkbox_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rel_password1"
+        android:layout_below="@+id/rel_code"
+        android:layout_marginTop="10dp"
+        android:checked="true"
+        android:text="已阅读并同意《玩赚app用户协议》"
+        android:visibility="gone"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/rel_code"
+        android:layout_alignRight="@+id/rel_password1"
+        android:layout_below="@+id/checkbox_agree"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_btn"
+        android:text="注册"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/checkbox_agree"
+        android:layout_below="@+id/button_register"
+        android:text="TextView"
+        android:textColor="#000"
+        android:visibility="gone" />
+
+</RelativeLayout>

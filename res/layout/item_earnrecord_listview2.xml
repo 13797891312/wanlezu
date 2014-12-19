@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textview_name"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="任务名称" />
+
+    <TextView
+        android:id="@+id/textview_menoy"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textview_time"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        android:text="赚得玩币" />
+
+	 <TextView
+	     android:id="@+id/textview_time"
+	     android:layout_width="120dp"
+	     android:layout_height="40dp"
+	     android:layout_centerVertical="true"
+	     android:textSize="12sp"
+	     android:layout_toRightOf="@+id/textview_name"
+	     android:gravity="center"
+	     android:text="完成时间" />
+
+	 <View
+	     android:layout_width="2px"
+	     android:layout_height="40dp"
+	     android:layout_centerVertical="true"
+	     android:layout_toRightOf="@+id/textview_name"
+	     android:background="#DBDBDB" />
+
+	 <View
+	     android:layout_width="2px"
+	     android:layout_height="40dp"
+	     android:layout_alignLeft="@+id/textview_menoy"
+	     android:layout_alignTop="@+id/textview_menoy"
+	     android:background="#DBDBDB" />
+
+</RelativeLayout>

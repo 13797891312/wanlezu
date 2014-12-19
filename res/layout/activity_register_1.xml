@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/includ_tab_back"
+        android:id="@+id/tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tab"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/error" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="请注意，一部手机只能登陆一个账号！"
+            android:textColor="#000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/qb_tenpay_border" >
+
+        <ImageView
+            android:id="@+id/imageview_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/name" />
+
+        <TextView
+            android:id="@+id/textview_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageview_phone"
+            android:text="手机号" />
+
+        <EditText
+            android:id="@+id/edittext_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textview_phone"
+            android:background="#00000000"
+            android:maxLines="1"
+            android:maxLength="11"
+            android:inputType="phone" >
+        </EditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rel_newPWD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/qb_tenpay_border" >
+
+        <ImageView
+            android:id="@+id/imageview_newPWD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/name" />
+
+        <TextView
+            android:id="@+id/textview_newPWD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageview_newPWD"
+            android:text="设置新密码" />
+
+        <EditText
+            android:id="@+id/edittext_newPWD"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textview_newPWD"
+            android:background="#00000000"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:maxLength="11">
+        </EditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rel_newPWD2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_newPWD"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/qb_tenpay_border" >
+
+        <ImageView
+            android:id="@+id/imageview_newPWD2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/name" />
+
+        <TextView
+            android:id="@+id/textview_newPWD2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageview_newPWD2"
+            android:text="确认新密码" />
+
+        <EditText
+            android:id="@+id/edittext_newPWD2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textview_newPWD2"
+            android:background="#00000000"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:maxLength="11">
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_newPWD2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/button_getcode"
+        android:background="@drawable/qb_tenpay_border" >
+
+        <ImageView
+            android:id="@+id/imageview_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/password" />
+
+        <TextView
+            android:id="@+id/textview_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageview_password"
+            android:text="验证码" />
+
+        <EditText
+            android:id="@+id/edittext_code"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textview_password"
+            android:background="#00000000"
+            android:maxLines="1"
+            android:maxLength="6"
+            android:inputType="phone" >
+
+        </EditText>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/rel_password"
+        android:layout_alignRight="@+id/button_getcode"
+        android:layout_below="@+id/rel_password"
+        android:layout_marginTop="50dp"
+        android:textColor="#fff"
+        android:background="@drawable/login_btn"
+        android:text="下一步" />
+
+    <Button
+        android:id="@+id/button_getcode"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/rel_phone"
+        android:layout_alignTop="@+id/rel_password"
+        android:layout_alignBottom="@+id/rel_password"
+       	android:enabled="false"
+        android:text="获取验证码" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:checked="true"
+        android:layout_marginLeft="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_next"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:text="我已阅读并同意" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox1"
+        android:layout_alignBottom="@+id/checkBox1"
+        android:layout_toRightOf="@+id/checkBox1"
+        android:textSize="12sp"
+        android:textColor="#00f"
+        android:visibility="gone"
+        android:text="玩赚使用条款和隐私政策" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rel_password"
+        android:layout_alignRight="@+id/button_getcode"
+        android:layout_below="@+id/rel_password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="60秒没有收到验证码，请点击获取语音验证码"
+        android:textSize="12sp" />
+</RelativeLayout>

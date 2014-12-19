@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#99232323" 
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/umeng_update_dialog_bg"
+        android:orientation="vertical" >
+
+        <!-- Title -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/shape_pop_tab" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="分享有奖"
+                android:textColor="#f00"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <LinearLayout android:id="@+id/qqkj"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/qqkj" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:textSize="12sp"
+                android:text="分享到QQ空间可额外获得" />
+
+            <TextView
+                android:id="@+id/textView_qqkj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:textSize="14sp"
+                 android:textColor="@color/red"
+                android:text="5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="玩币" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/txwb"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/txwb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:textSize="12sp"
+                android:text="分享到腾讯微博可额外获得" />
+
+            <TextView
+                android:id="@+id/textView_txwb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:textSize="14sp"
+                 android:textColor="@color/red"
+                android:text="5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="玩币" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/wxpyq"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/wxpyq" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:textSize="12sp"
+                android:text="分享到微信朋友圈可额外获得" />
+
+            <TextView
+                android:id="@+id/textView_wxpyq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:textSize="14sp"
+                 android:textColor="@color/red"
+                android:text="5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="玩币" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/xlwb"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/xlwb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:textSize="12sp"
+                android:text="分享到新浪微博可额外获得" />
+
+            <TextView
+                android:id="@+id/textView_xlwb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:textSize="14sp"
+                 android:textColor="@color/red"
+                android:text="5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="玩币" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/pop_btn_exit_dismiss"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="我知道了"
+                android:textColor="#000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel"
+    android:background="#e8e8e8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/includ_tab_back" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="摇一摇，还剩5次机会"
+        android:textColor="#f00" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/yiy1_07" />
+
+    <RelativeLayout
+        android:id="@+id/rel_youhui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_my_gridview"
+        android:visibility="gone"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠码 ：123456789"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_code"
+            android:text="朝天门火锅优惠券"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_name"
+            android:text="优惠信息："
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:text="asdfasdfasdfasdfasfasdf"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/share_button"
+            android:layout_alignTop="@+id/textView_code"
+            android:textColor="#fff"
+            android:text="领取" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+        <ImageView
+            android:id="@+id/imageview_2"
+            android:scaleType="fitXY"
+            android:layout_marginTop="50dp"
+            android:background="#e8e8e8"
+            android:layout_width="100dp"
+            android:layout_height="63dp"
+            android:src="@drawable/yiy1_03" />
+        <ImageView
+            android:id="@+id/imageview_3"
+            android:layout_below="@+id/imageview_2"
+            android:scaleType="fitXY"
+            android:background="#e8e8e8"
+            android:layout_width="100dp"
+            android:layout_height="63dp"
+            android:src="@drawable/yiy1_10" />
+        <View android:layout_width="1dp"
+            android:layout_below="@+id/imageview_3"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
