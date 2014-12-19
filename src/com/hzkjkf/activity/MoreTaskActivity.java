@@ -30,7 +30,7 @@ import android.widget.Toast;
 public class MoreTaskActivity extends Activity implements OnClickListener,
 		net.youmi.android.offers.PointsChangeNotify {
 	private String PublisherID = "96ZJ36BwzeH3jwTBwc";
-	private TextView domob_tv, youmi_tv, dianle_tv, yinggao_tv;
+	private TextView domob_tv, youmi_tv, dianle_tv, yinggao_tv,tv_5;
 	private Dialog dialog;
 	private ImageView iv;
 	private Bitmap bitmap;
@@ -45,6 +45,7 @@ public class MoreTaskActivity extends Activity implements OnClickListener,
 		((ImageView) findViewById(R.id.imageView1)).setImageBitmap(bitmap);
 		iv = (ImageView) findViewById(R.id.imageView1);
 		((TextView) findViewById(R.id.title)).setText("下应用");
+		findViewById(R.id.rel_5).setVisibility(View.VISIBLE);
 		domob_tv = (TextView) findViewById(R.id.TextView_2);
 		dianle_tv = (TextView) findViewById(R.id.TextView_4);
 		yinggao_tv = (TextView) findViewById(R.id.TextView_3);
@@ -53,6 +54,8 @@ public class MoreTaskActivity extends Activity implements OnClickListener,
 		domob_tv.setOnClickListener(this);
 		youmi_tv = (TextView) findViewById(R.id.TextView_1);
 		youmi_tv.setOnClickListener(this);
+		tv_5 = (TextView) findViewById(R.id.TextView_5);
+		tv_5.setOnClickListener(this);
 		DMOfferWall.getInstance(this).init(this, PublisherID,
 				MyApp.getInstence().getPhone());
 		// mDomobOfferWallManager = new OManager(this, PublisherID,
@@ -107,7 +110,10 @@ public class MoreTaskActivity extends Activity implements OnClickListener,
 			AdWall.showAppOffers(null);
 		} else if (id == R.id.TextView_4) {
 			OffersManager.getInstance(this).showOffersWall();//有米
-		}
+		} else if(id == R.id.TextView_5){
+			com.winad.android.offers.AdManager.setUserID(this, MyApp.getInstence().getPhone());
+			com.winad.android.offers.AdManager.showAdOffers(this);
+		};
 
 	}
 

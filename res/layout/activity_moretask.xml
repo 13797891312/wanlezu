@@ -136,12 +136,39 @@
                     android:id="@+id/iv_3"
                     android:background="@drawable/down" />
             </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rel_5"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/rel_dianle"
+                android:layout_marginTop="-1px"
+                android:background="@drawable/shape_my_gridview" >
+
+                <TextView
+                    android:id="@+id/TextView_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="60dp"
+                    android:text="应用市场五"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/iv_5"
+                    android:background="@drawable/down" />
+            </RelativeLayout>
 
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/rel_dianle"
+                android:layout_below="@+id/rel_5"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"

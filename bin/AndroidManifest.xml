@@ -57,6 +57,11 @@
         android:icon="@drawable/u4_normal"
         android:label="@string/app_name"
         android:theme="@style/ThemeActivity" >
+
+        <!-- 赢告 -->
+        <meta-data
+            android:name="PUBLISHER_ID_OFFERS"
+            android:value="97522AD51628838F1AB7917D6F299AAC2E723C6A" />
         <meta-data
             android:name="UMENG_APPKEY"
             android:value="53d85466fd98c58301010252" />
@@ -133,9 +138,10 @@
             <!-- 浏览器跳转到APP的过滤器 -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-               <!--  <data android:host="my.com" /> -->
+                <!-- <data android:host="my.com" /> -->
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data android:scheme="wanlezu" />
             </intent-filter>
         </activity>
@@ -457,6 +463,11 @@
             </intent-filter>
         </receiver>
         <!-- OffWow SDK结束 -->
+		
+		<!-- 赢告 -->
+        <activity
+            android:name="com.winad.android.offers.OffersActivity"
+            android:configChanges="keyboardHidden|orientation|navigation|screenSize" />
     </application>
 
     <uses-permission android:name="android.permission.SET_DEBUG_APP" />

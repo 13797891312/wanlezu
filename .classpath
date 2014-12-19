@@ -32,6 +32,7 @@
 	<classpathentry kind="lib" path="libs/CCP_REST_SDK_JAVA_v2.6.3r.jar"/>
 	<classpathentry kind="lib" path="libs/com.umeng.message.lib.jar"/>
 	<classpathentry kind="lib" path="libs/advertwall-sdk.jar"/>
+	<classpathentry kind="lib" path="libs/offers-android-sdk.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="output" path="bin/classes"/>

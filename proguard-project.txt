@@ -110,5 +110,13 @@
 -keep public class com.hzkjkf.wanzhuan.R$*{
    public static final int *;
 }
+-keep public class com.winad.android.offers.** {
+*;
+}
+
+-keep public class com.baidu.location.** {
+*;
+}
+
 
 
